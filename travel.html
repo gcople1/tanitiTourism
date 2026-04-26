@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taniti Island — Travel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav id="mainNav">
+  <a class="nav-logo" href="index.html">Taniti<span>✦</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" id="nav-home">Home</a></li>
+    <li><a href="travel.html" class="active" id="nav-travel">Travel</a></li>
+    <li><a href="stay.html" id="nav-stay">Stay</a></li>
+    <li><a href="eat.html" id="nav-eat">Eat</a></li>
+    <li><a href="play.html" id="nav-play">Play</a></li>
+    <li><a href="getaround.html" id="nav-getaround">Get Around</a></li>
+    <li><a href="ask.html" id="nav-ask">Ask!</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- PAGE CONTENT -->
+<div class="section-hero" data-emoji="✈️">
+  <div class="breadcrumb">Home → Travel</div>
+  <h1>Getting to Taniti</h1>
+  <p>Fly or sail your way to paradise — we'll handle the rest.</p>
+</div>
+
+<div class="content-area">
+  <div class="info-badge">🔨 Airport expansion underway — more direct flights coming soon!</div>
+
+  <div class="tabs">
+    <button class="tab-btn active" onclick="switchTab('travel', 'plane')">✈️ By Plane</button>
+    <button class="tab-btn" onclick="switchTab('travel', 'ship')">🛳️ By Ship</button>
+  </div>
+
+  <div id="travel-tab-plane" class="tab-content active">
+    <h2 class="sub-heading">Book Your Flight to Taniti</h2>
+    <p class="sub-desc">Taniti is served by a small airport accommodating jets and propeller planes. Expansion is underway for larger aircraft.</p>
+
+    <div class="booking-widget">
+      <h3>✈️ Flight Search</h3>
+      <p>Search available flights to Taniti International Airport (TNT)</p>
+      <div class="booking-form">
+        <div class="form-group">
+          <label>From</label>
+          <input type="text" placeholder="Origin city or airport">
+        </div>
+        <div class="form-group">
+          <label>To</label>
+          <input type="text" value="Taniti (TNT)" readonly>
+        </div>
+        <div class="form-group">
+          <label>Depart</label>
+          <input type="date">
+        </div>
+        <div class="form-group">
+          <label>Return</label>
+          <input type="date">
+        </div>
+        <div class="form-group">
+          <label>Passengers</label>
+          <select>
+            <option>1 Adult</option>
+            <option>2 Adults</option>
+            <option>2 Adults, 1 Child</option>
+            <option>2 Adults, 2 Children</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>&nbsp;</label>
+          <button class="btn-book" onclick="showConfirmation()">Search Flights</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="travel-tab-ship" class="tab-content">
+    <h2 class="sub-heading">Arrive by Cruise Ship</h2>
+    <p class="sub-desc">A small cruise ship docks in Yellow Leaf Bay once per week, making Taniti a perfect port of call.</p>
+
+    <div class="booking-widget">
+      <h3>🛳️ Cruise Booking</h3>
+      <p>Check cruise itineraries with a Taniti port stop at Yellow Leaf Bay</p>
+      <div class="booking-form">
+        <div class="form-group">
+          <label>Departure Port</label>
+          <select>
+            <option>Select departure...</option>
+            <option>Honolulu, HI</option>
+            <option>San Francisco, CA</option>
+            <option>Seattle, WA</option>
+            <option>Los Angeles, CA</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Travel Month</label>
+          <input type="month">
+        </div>
+        <div class="form-group">
+          <label>Guests</label>
+          <select>
+            <option>2 Guests</option>
+            <option>3 Guests</option>
+            <option>4 Guests</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>&nbsp;</label>
+          <button class="btn-book" onclick="showConfirmation()">Search Cruises</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="confirmationTravel" class="confirmation-box">
+    <div class="check">✅</div>
+    <h3>Search Submitted!</h3>
+    <p>We're searching the best options for you. A travel specialist will be in touch shortly.</p>
+    <button class="btn btn-outline" style="margin-top:20px; border-color: rgba(255,255,255,0.5); color: white;" onclick="hideConfirmation('confirmationTravel')">Search Again</button>
+  </div>
+
+  <div class="map-container">
+    <div class="map-pin">📍</div>
+    <p>Taniti Airport & Harbor — Interactive Map</p>
+    <span>Draggable, zoomable map with airport and port locations marked</span>
+  </div>
+</div>
+
+<footer>
+  <div class="logo">Taniti<span>✦</span> Island</div>
+  <p>© 2024 Taniti Island Tourism Board</p>
+</footer>
+
+</body>
+</html>
