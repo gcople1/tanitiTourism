@@ -13,7 +13,7 @@
     --dark: #1A1A2E;
     --text: #2C3E50;
     --light-text: #6B7C8D;
-    --nav-h: 70px;
+    --nav-h: 60px;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
