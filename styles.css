@@ -279,7 +279,7 @@
     cursor: pointer;
     transition: all 0.2s;
     text-align: right;
-    font-size: 0.85rem;
+    font-size: 1.5rem;
     font-weight: 600;
     letter-spacing: 0.05em;
   }
@@ -289,7 +289,12 @@
     transform: translateX(-4px);
   }
 
-  .quick-card .icon { font-size: 1.2rem; margin-left: 8px; }
+  .quick-card .icon { font-size: 2.0rem; margin-left: 8px; }
+    
+  @media (orientation: landscape) {
+    .quick-nav { width: 25vw; }
+    .quick-card { width: 100%; box-sizing: border-box; }
+  }
 
   /* ===== ABOUT STRIP ===== */
   .about-strip {
