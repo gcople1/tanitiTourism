@@ -30,5 +30,5 @@ The website is organized into several key sections accessible via a primary navi
 
 
 ## How to Run the Project
-1. Clone the repository: `git clone [repository-link]`
-2. Open `index.html` in your preferred web browser.
+1. Clone the repository: `git clone [[repository-link](https://github.com/gcople1/tanitiTourism.git)]`
+2. Open `taniti_island.html` in your preferred web browser.
