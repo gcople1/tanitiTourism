@@ -30,5 +30,8 @@ The website is organized into several key sections accessible via a primary navi
 
 
 ## How to Run the Project
+Option 1: run from URL  https://gcople1.github.io/tanitiTourism/
+
+Option 2 - run locally:
 1. Clone the repository: `git clone [[repository-link](https://github.com/gcople1/tanitiTourism.git)]`
 2. Open `taniti_island.html` in your preferred web browser.
