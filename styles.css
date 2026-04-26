@@ -13,7 +13,7 @@
     --dark: #1A1A2E;
     --text: #2C3E50;
     --light-text: #6B7C8D;
-    --nav-h: 70px;
+    --nav-h: 60px;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -117,7 +117,7 @@
 
   /* ===== HERO ===== */
   .hero {
-    min-height: calc(100vh - var(--nav-h));
+    min-height: calc(80vh - var(--nav-h));
     background: linear-gradient(160deg, var(--deep-ocean) 0%, var(--ocean) 40%, var(--lagoon) 70%, var(--seafoam) 100%);
     position: relative;
     display: flex;
@@ -207,6 +207,18 @@
   }
 
   .btn-primary {
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s;
+    text-decoration: none;
     background: var(--gold);
     color: var(--deep-ocean);
   }
@@ -227,6 +239,24 @@
     border-color: var(--white);
     background: rgba(255,255,255,0.1);
     transform: translateY(-2px);
+  }
+
+  .btn-secondary {
+    background: var(--light-text);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .btn-secondary:hover {
+    background: #5a6c7d;
+    transform: translateY(-1px);
   }
 
   /* Quick nav cards on hero */
@@ -533,6 +563,119 @@
   }
 
   .btn-book:hover { background: #e8bb55; transform: translateY(-1px); }
+
+  /* ===== CONTACT FORM ===== */
+  .contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .contact-form .form-group {
+    margin-bottom: 20px;
+  }
+
+  .contact-form .form-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 8px;
+    text-transform: none;
+    letter-spacing: normal;
+    opacity: 1;
+  }
+
+  .contact-form .form-group input,
+  .contact-form .form-group select,
+  .contact-form .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e1e8ed;
+    border-radius: 8px;
+    background: var(--white);
+    color: var(--text);
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.95rem;
+    outline: none;
+    transition: all 0.2s;
+    box-sizing: border-box;
+  }
+
+  .contact-form .form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .contact-form .form-group input::placeholder,
+  .contact-form .form-group textarea::placeholder {
+    color: var(--light-text);
+    opacity: 0.7;
+  }
+
+  .contact-form .form-group input:focus,
+  .contact-form .form-group select:focus,
+  .contact-form .form-group textarea:focus {
+    border-color: var(--lagoon);
+    background: var(--white);
+    box-shadow: 0 0 0 3px rgba(42, 165, 192, 0.1);
+  }
+
+  .contact-form .form-group select {
+    cursor: pointer;
+  }
+
+  .contact-form .form-group select option {
+    background: var(--white);
+    color: var(--text);
+  }
+
+  /* ===== CONTACT INFO ===== */
+  .contact-info {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #e1e8ed;
+  }
+
+  .contact-info h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--text);
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+  }
+
+  .contact-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .contact-method {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e1e8ed;
+  }
+
+  .contact-icon {
+    font-size: 1.5rem;
+    opacity: 0.8;
+  }
+
+  .contact-method strong {
+    color: var(--text);
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  .contact-method div {
+    color: var(--light-text);
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
 
   /* ===== TRANSPORT CARDS ===== */
   .transport-grid {
