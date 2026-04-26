@@ -18,6 +18,8 @@
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
+
+
   html { scroll-behavior: smooth; }
 
   body {
@@ -43,6 +45,8 @@
   }
 
   nav.scrolled { background: rgba(11, 61, 94, 1); }
+
+  a { text-decoration: none; }
 
   .nav-logo {
     font-family: 'Playfair Display', serif;
