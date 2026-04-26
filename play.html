@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taniti Island — Play</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav id="mainNav">
+  <a class="nav-logo" href="index.html">Taniti<span>✦</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" id="nav-home">Home</a></li>
+    <li><a href="travel.html" id="nav-travel">Travel</a></li>
+    <li><a href="stay.html" id="nav-stay">Stay</a></li>
+    <li><a href="eat.html" id="nav-eat">Eat</a></li>
+    <li><a href="play.html" class="active" id="nav-play">Play</a></li>
+    <li><a href="getaround.html" id="nav-getaround">Get Around</a></li>
+    <li><a href="ask.html" id="nav-ask">Ask!</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- PAGE CONTENT -->
+<div class="section-hero" data-emoji="🎉">
+  <div class="breadcrumb">Home → Play</div>
+  <h1>Things to Do on Taniti</h1>
+  <p>From hiking to cultural experiences, Taniti offers endless adventure for every traveler.</p>
+</div>
+
+<div class="content-area">
+  <div class="tabs">
+    <button class="tab-btn active" onclick="switchTab('play', 'outdoor')">🏔️ Outdoor</button>
+    <button class="tab-btn" onclick="switchTab('play', 'culture')">🎭 Culture</button>
+    <button class="tab-btn" onclick="switchTab('play', 'tours')">🚐 Tours</button>
+    <button class="tab-btn" onclick="switchTab('play', 'rainyday')">🌧️ Rainy Day</button>
+  </div>
+
+  <div id="play-tab-outdoor" class="tab-content active">
+    <h2 class="sub-heading">Outdoor Adventures</h2>
+    <p class="sub-desc">Explore Taniti's natural beauty with hiking, snorkeling, and water sports.</p>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-img" style="background: linear-gradient(135deg,#d4f0d4,#b0e8b8);">🏔️</div>
+        <div class="card-body"><span class="card-tag tag-adventure">Hiking</span><h3>Mount Taniti Summit</h3><p>Challenging 4-hour hike to the island's highest peak with panoramic views. Guided tours available.</p></div>
+      </div>
+      <div class="card">
+        <div class="card-img" style="background: linear-gradient(135deg,#b8e8f8,#90d8f0);">🐠</div>
+        <div class="card-body"><span class="card-tag tag-adventure">Snorkeling</span><h3>Coral Reef Exploration</h3><p>Crystal-clear waters and vibrant marine life. Equipment rentals and guided snorkel tours.</p></div>
+      </div>
+      <div class="card">
+        <div class="card-img" style="background: linear-gradient(135deg,#fce4c8,#f8d0a0);">🏄‍♂️</div>
+        <div class="card-body"><span class="card-tag tag-adventure">Water Sports</span><h3>Yellow Leaf Bay</h3><p>Kayaking, paddleboarding, and jet skiing rentals. Perfect for families and thrill-seekers.</p></div>
+      </div>
+      <div class="card">
+        <div class="card-img" style="background: linear-gradient(135deg,#e8d4f8,#d0b8f0);">🐦</div>
+        <div class="card-body"><span class="card-tag tag-nature">Bird Watching</span><h3>Island Wildlife Trails</h3><p>Over 200 species of birds. Guided birdwatching tours with expert naturalists.</p></div>
+      </div>
+      <div class="card">
+        <div class="card-img" style="background: linear-gradient(135deg,#f8d4d4,#f0b8b8);">🏖️</div>
+        <div class="card-body"><span class="card-tag tag-relax">Beach Activities</span><h3>White Sand Beach</h3><p>Relaxing beach days with volleyball, beachcombing, and sunset watching.</p></div>
+      </div>
+      <div class="card">
+        <div class="card-img" style="background: linear-gradient(135deg,#d4f0f8,#b0e8f8);">🚲</div>
+        <div class="card-body"><span class="card-tag tag-adventure">Cycling</span><h3>Island Bike Trails</h3><p>Scenic bike paths around the island. Bike rentals available at major hotels.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="play-tab-culture" class="tab-content">
+    <h2 class="sub-heading">Cultural Experiences</h2>
+    <p class="sub-desc">Immerse yourself in Taniti's rich heritage and traditions.</p>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-img" style="background: linear-gradient(135deg,#fce4c8,#f8d0a0);">🏛️</div>
+        <div class="card-body"><span class="card-tag tag-culture">History</span><h3>Taniti Museum</h3><p>Learn about the island's history from ancient times to modern day. Artifacts and interactive exhibits.</p></div>
+      </div>
+      <div class="card">
+        <div class="card-img" style="background: linear-gradient(135deg,#e8d4f8,#d0b8f0);">🎨</div>
+        <div class="card-body"><span class="card-tag tag-culture">Arts</span><h3>Local Art Galleries</h3><p>Contemporary and traditional Tanitian art. Visit galleries in Taniti City and Merriton Landing.</p></div>
+      </div>
+      <div class="card">
+        <div class="card-img" style="background: linear-gradient(135deg,#d4f0d4,#b0e8b8);">🎵</div>
+        <div class="card-body"><span class="card-tag tag-culture">Music</span><h3>Island Music Festival</h3><p>Weekly live music at the Taniti Amphitheater. Traditional and contemporary island sounds.</p></div>
+      </div>
+      <div class="card">
+        <div class="card-img" style="background: linear-gradient(135deg,#f8d4d4,#f0b8b8);">🕺</div>
+        <div class="card-body"><span class="card-tag tag-culture">Dance</span><h3>Cultural Dance Shows</h3><p>Traditional Tanitian dance performances. Learn basic steps in interactive workshops.</p></div>
+      </div>
+      <div class="card">
+        <div class="card-img" style="background: linear-gradient(135deg,#d4f0f8,#b0e8f8);">🏺</div>
+        <div class="card-body"><span class="card-tag tag-culture">Crafts</span><h3>Artisan Workshops</h3><p>Learn traditional crafts like weaving, pottery, and jewelry making from local artisans.</p></div>
+      </div>
+      <div class="card">
+        <div class="card-img" style="background: linear-gradient(135deg,#f8e4d4,#f0d0b8);">🌺</div>
+        <div class="card-body"><span class="card-tag tag-culture">Festivals</span><h3>Island Festivals</h3><p>Join local celebrations, markets, and cultural events throughout the year.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="play-tab-tours" class="tab-content">
+    <h2 class="sub-heading">Guided Tours</h2>
+    <p class="sub-desc">Expert-led tours to discover Taniti's hidden gems and must-see attractions.</p>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-img" style="background: linear-gradient(135deg,#d4f0d4,#b0e8b8);">🌺</div>
+        <div class="card-body"><span class="card-tag tag-tour">Full Day</span><h3>Island Explorer Tour</h3><p>Comprehensive tour covering all major attractions. Includes lunch and transportation.</p></div>
+      </div>
+      <div class="card">
+        <div class="card-img" style="background: linear-gradient(135deg,#b8e8f8,#90d8f0);">🏔️</div>
+        <div class="card-body"><span class="card-tag tag-tour">Adventure</span><h3>Mountain & Beach Tour</h3><p>Hike to Mount Taniti summit then relax on secluded beaches. Perfect for active travelers.</p></div>
+      </div>
+      <div class="card">
+        <div class="card-img" style="background: linear-gradient(135deg,#fce4c8,#f8d0a0);">🐠</div>
+        <div class="card-body"><span class="card-tag tag-tour">Marine</span><h3>Snorkeling Adventure</h3><p>Full-day snorkeling tour with professional guides. Visit multiple reef locations.</p></div>
+      </div>
+      <div class="card">
+        <div class="card-img" style="background: linear-gradient(135deg,#e8d4f8,#d0b8f0);">🏛️</div>
+        <div class="card-body"><span class="card-tag tag-tour">Cultural</span><h3>Heritage Tour</h3><p>Explore Taniti's history and culture. Visit museums, traditional villages, and sacred sites.</p></div>
+      </div>
+      <div class="card">
+        <div class="card-img" style="background: linear-gradient(135deg,#f8d4d4,#f0b8b8);">🚲</div>
+        <div class="card-body"><span class="card-tag tag-tour">Bike Tour</span><h3>Coastal Bike Adventure</h3><p>Guided bike tour along scenic coastal paths. Includes bike rental and refreshments.</p></div>
+      </div>
+      <div class="card">
+        <div class="card-img" style="background: linear-gradient(135deg,#d4f0f8,#b0e8f8);">🌅</div>
+        <div class="card-body"><span class="card-tag tag-tour">Sunset</span><h3>Sunset Sail Tour</h3><p>Romantic evening sail around Yellow Leaf Bay with champagne and appetizers.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="play-tab-rainyday" class="tab-content">
+    <h2 class="sub-heading">Rainy Day Activities</h2>
+    <p class="sub-desc">Indoor and covered activities for when the weather doesn't cooperate.</p>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-img" style="background: linear-gradient(135deg,#fce4c8,#f8d0a0);">🏛️</div>
+        <div class="card-body"><span class="card-tag tag-indoor">Museum</span><h3>Taniti Museum</h3><p>Interactive exhibits about island history, culture, and natural history. Indoor galleries.</p></div>
+      </div>
+      <div class="card">
+        <div class="card-img" style="background: linear-gradient(135deg,#e8d4f8,#d0b8f0);">🎨</div>
+        <div class="card-body"><span class="card-tag tag-indoor">Arts</span><h3>Art Galleries</h3><p>Visit indoor art galleries featuring local and international artists. Many with cafes.</p></div>
+      </div>
+      <div class="card">
+        <div class="card-img" style="background: linear-gradient(135deg,#d4f0d4,#b0e8b8);">🎭</div>
+        <div class="card-body"><span class="card-tag tag-indoor">Theater</span><h3>Taniti Amphitheater</h3><p>Covered outdoor theater with indoor backup space for performances and concerts.</p></div>
+      </div>
+      <div class="card">
+        <div class="card-img" style="background: linear-gradient(135deg,#f8d4d4,#f0b8b8);">🛍️</div>
+        <div class="card-body"><span class="card-tag tag-indoor">Shopping</span><h3>Island Markets</h3><p>Covered markets and indoor shopping centers with local crafts and souvenirs.</p></div>
+      </div>
+      <div class="card">
+        <div class="card-img" style="background: linear-gradient(135deg,#d4f0f8,#b0e8f8);">🍽️</div>
+        <div class="card-body"><span class="card-tag tag-indoor">Dining</span><h3>Indoor Restaurants</h3><p>Enjoy Taniti's cuisine indoors at restaurants with covered patios and full indoor seating.</p></div>
+      </div>
+      <div class="card">
+        <div class="card-img" style="background: linear-gradient(135deg,#f8e4d4,#f0d0b8);">📚</div>
+        <div class="card-body"><span class="card-tag tag-indoor">Library</span><h3>Taniti Public Library</h3><p>Free indoor activities including reading rooms, internet access, and cultural programs.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="map-container">
+    <div class="map-pin">🎉</div>
+    <p>Taniti Activities Map</p>
+    <span>Interactive map showing all attractions, trails, and tour starting points</span>
+  </div>
+</div>
+
+<footer>
+  <div class="logo">Taniti<span>✦</span> Island</div>
+  <p>© 2024 Taniti Island Tourism Board</p>
+</footer>
+
+</body>
+</html>

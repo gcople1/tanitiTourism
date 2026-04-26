@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taniti Island — Get Around</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav id="mainNav">
+  <a class="nav-logo" href="index.html">Taniti<span>✦</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" id="nav-home">Home</a></li>
+    <li><a href="travel.html" id="nav-travel">Travel</a></li>
+    <li><a href="stay.html" id="nav-stay">Stay</a></li>
+    <li><a href="eat.html" id="nav-eat">Eat</a></li>
+    <li><a href="play.html" id="nav-play">Play</a></li>
+    <li><a href="getaround.html" class="active" id="nav-getaround">Get Around</a></li>
+    <li><a href="ask.html" id="nav-ask">Ask!</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- PAGE CONTENT -->
+<div class="section-hero" data-emoji="🚗">
+  <div class="breadcrumb">Home → Get Around</div>
+  <h1>Getting Around Taniti</h1>
+  <p>From public buses to rental cars, explore the island your way with reliable transportation options.</p>
+</div>
+
+<div class="content-area">
+  <div class="transport-grid">
+    <div class="transport-card">
+      <div class="transport-icon">🚌</div>
+      <h3>Public Bus</h3>
+      <p>Extensive bus network covering the entire island. Buses run regularly from 5am to 11pm daily.</p>
+      <div class="transport-details">
+        <div class="detail-item"><span>Cost:</span> $1 per ride</div>
+        <div class="detail-item"><span>Frequency:</span> Every 15-30 minutes</div>
+        <div class="detail-item"><span>Coverage:</span> Island-wide</div>
+      </div>
+    </div>
+
+    <div class="transport-card">
+      <div class="transport-icon">🚕</div>
+      <h3>Taxis</h3>
+      <p>Available 24/7 throughout the island. Can be hailed on the street or called ahead.</p>
+      <div class="transport-details">
+        <div class="detail-item"><span>Cost:</span> $2 base + $1/km</div>
+        <div class="detail-item"><span>Availability:</span> 24 hours</div>
+        <div class="detail-item"><span>Booking:</span> Phone or street hail</div>
+      </div>
+    </div>
+
+    <div class="transport-card">
+      <div class="transport-icon">🚲</div>
+      <h3>Bike Rental</h3>
+      <p>Perfect for exploring at your own pace. Rentals available at hotels and major locations.</p>
+      <div class="transport-details">
+        <div class="detail-item"><span>Cost:</span> $5/day</div>
+        <div class="detail-item"><span>Locations:</span> Hotels & bike shops</div>
+        <div class="detail-item"><span>Best for:</span> Short distances</div>
+      </div>
+    </div>
+
+    <div class="transport-card">
+      <div class="transport-icon">🏍️</div>
+      <h3>Scooter Rental</h3>
+      <p>Popular choice for locals and visitors. Easy to maneuver through island roads.</p>
+      <div class="transport-details">
+        <div class="detail-item"><span>Cost:</span> $10/day</div>
+        <div class="detail-item"><span>License:</span> Valid driver's license</div>
+        <div class="detail-item"><span>Best for:</span> Flexible travel</div>
+      </div>
+    </div>
+
+    <div class="transport-card">
+      <div class="transport-icon">🚗</div>
+      <h3>Car Rental</h3>
+      <p>Full-size vehicles available for rent. Perfect for families or those carrying gear.</p>
+      <div class="transport-details">
+        <div class="detail-item"><span>Cost:</span> $40-60/day</div>
+        <div class="detail-item"><span>Locations:</span> Airport & hotels</div>
+        <div class="detail-item"><span>Requirements:</span> Valid license</div>
+      </div>
+    </div>
+
+    <div class="transport-card">
+      <div class="transport-icon">🚐</div>
+      <h3>Shuttle Service</h3>
+      <p>Scheduled shuttles between major attractions. Great for organized tours.</p>
+      <div class="transport-details">
+        <div class="detail-item"><span>Cost:</span> $5-15 per person</div>
+        <div class="detail-item"><span>Routes:</span> Tourist attractions</div>
+        <div class="detail-item"><span>Booking:</span> Through hotels</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top: 40px;">
+    <h2 class="sub-heading">Transportation Tips</h2>
+    <div class="tips-grid">
+      <div class="tip-card">
+        <div class="tip-icon">🗺️</div>
+        <h4>Island Layout</h4>
+        <p>Taniti is small enough to explore thoroughly. Most attractions are within 30-45 minutes of each other.</p>
+      </div>
+      <div class="tip-card">
+        <div class="tip-icon">⏰</div>
+        <h4>Best Times</h4>
+        <p>Bus service is most frequent during peak tourist season. Early morning and evening buses may be less crowded.</p>
+      </div>
+      <div class="tip-card">
+        <div class="tip-icon">💰</div>
+        <h4>Cost Saving</h4>
+        <p>Public buses are the most economical option. Consider a multi-day bus pass for frequent travelers.</p>
+      </div>
+      <div class="tip-card">
+        <div class="tip-icon">🌧️</div>
+        <h4>Weather Considerations</h4>
+        <p>Roads are well-maintained but can be slippery during rain. Scooters and bikes are not recommended in heavy rain.</p>
+      </div>
+      <div class="tip-card">
+        <div class="tip-icon">📱</div>
+        <h4>Apps & Booking</h4>
+        <p>Download the Taniti Transport app for real-time bus schedules and taxi booking.</p>
+      </div>
+      <div class="tip-card">
+        <div class="tip-icon">🚶‍♀️</div>
+        <h4>Walking</h4>
+        <p>Taniti City and Merriton Landing are very walkable. Many attractions are within walking distance of accommodations.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="map-container">
+    <div class="map-pin">🚗</div>
+    <p>Taniti Transportation Map</p>
+    <span>Interactive map showing bus routes, taxi stands, and rental locations</span>
+  </div>
+</div>
+
+<footer>
+  <div class="logo">Taniti<span>✦</span> Island</div>
+  <p>© 2024 Taniti Island Tourism Board</p>
+</footer>
+
+</body>
+</html>

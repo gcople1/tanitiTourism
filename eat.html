@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taniti Island — Eat</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav id="mainNav">
+  <a class="nav-logo" href="index.html">Taniti<span>✦</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" id="nav-home">Home</a></li>
+    <li><a href="travel.html" id="nav-travel">Travel</a></li>
+    <li><a href="stay.html" id="nav-stay">Stay</a></li>
+    <li><a href="eat.html" class="active" id="nav-eat">Eat</a></li>
+    <li><a href="play.html" id="nav-play">Play</a></li>
+    <li><a href="getaround.html" id="nav-getaround">Get Around</a></li>
+    <li><a href="ask.html" id="nav-ask">Ask!</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- PAGE CONTENT -->
+<div class="section-hero" data-emoji="🍽️">
+  <div class="breadcrumb">Home → Eat</div>
+  <h1>Dining on Taniti</h1>
+  <p>10 restaurants, 2 supermarkets, and a 24-hour convenience store — you'll never go hungry on Taniti.</p>
+</div>
+
+<div class="content-area">
+  <div class="tabs">
+    <button class="tab-btn active" onclick="switchTab('eat', 'bycuisine')">🍜 By Cuisine</button>
+    <button class="tab-btn" onclick="switchTab('eat', 'bylocation')">📍 By Location</button>
+    <button class="tab-btn" onclick="switchTab('eat', 'grocery')">🛒 Grocery</button>
+  </div>
+
+  <div id="eat-tab-bycuisine" class="tab-content active">
+    <h2 class="sub-heading">Restaurants by Cuisine</h2>
+    <p class="sub-desc">Explore Taniti's diverse dining scene with local favorites and international options.</p>
+
+    <div style="margin-bottom: 28px;">
+      <h3 style="font-family: 'Playfair Display', serif; color: var(--palm); margin-bottom: 16px; font-size: 1.1rem;">🐟 Local Eats (5 restaurants)</h3>
+      <div class="restaurant-list">
+        <div class="restaurant-item">
+          <div class="r-icon" style="background: rgba(76,168,90,0.1);">🐟</div>
+          <div>
+            <h4>Harbor Fish & Rice</h4>
+            <p>Fresh-caught local fish with traditional Tanitian rice dishes. A true taste of island life.</p>
+          </div>
+          <div class="r-location">Taniti City</div>
+        </div>
+        <div class="restaurant-item">
+          <div class="r-icon" style="background: rgba(76,168,90,0.1);">🌺</div>
+          <div>
+            <h4>Yellow Leaf Kitchen</h4>
+            <p>Family-run restaurant serving generations-old recipes overlooking the bay.</p>
+          </div>
+          <div class="r-location">Merriton Landing</div>
+        </div>
+        <div class="restaurant-item">
+          <div class="r-icon" style="background: rgba(76,168,90,0.1);">🍚</div>
+          <div>
+            <h4>The Fishing Village</h4>
+            <p>Casual beachside dining with the freshest catch of the day, grilled to perfection.</p>
+          </div>
+          <div class="r-location">Taniti City</div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <div style="margin-bottom: 28px;">
+      <h3 style="font-family: 'Playfair Display', serif; color: var(--ocean); margin-bottom: 16px; font-size: 1.1rem;">🍜 Pan-Asian Cuisine (2 restaurants)</h3>
+      <div class="restaurant-list">
+        <div class="restaurant-item">
+          <div class="r-icon" style="background: rgba(26,107,138,0.1);">🍜</div>
+          <div>
+            <h4>Pacific Rim Bistro</h4>
+            <p>A fusion of Japanese, Thai, and Vietnamese flavors with locally sourced ingredients.</p>
+          </div>
+          <div class="r-location">Merriton Landing</div>
+        </div>
+        <div class="restaurant-item">
+          <div class="r-icon" style="background: rgba(26,107,138,0.1);">🥢</div>
+          <div>
+            <h4>Golden Dragon</h4>
+            <p>Traditional Asian fare with a Tanitian twist — must try the coconut-infused curries.</p>
+          </div>
+          <div class="r-location">Taniti City</div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <div>
+      <h3 style="font-family: 'Playfair Display', serif; color: var(--volcano); margin-bottom: 16px; font-size: 1.1rem;">🍔 American Style (3 restaurants)</h3>
+      <div class="restaurant-list">
+        <div class="restaurant-item">
+          <div class="r-icon" style="background: rgba(192,67,43,0.1);">🍔</div>
+          <div>
+            <h4>Island Burgers & Shakes</h4>
+            <p>Classic American comfort food with tropical twists. Favorite among visiting families.</p>
+          </div>
+          <div class="r-location">Merriton Landing</div>
+        </div>
+        <div class="restaurant-item">
+          <div class="r-icon" style="background: rgba(192,67,43,0.1);">🍕</div>
+          <div>
+            <h4>Bay View Grill</h4>
+            <p>Burgers, sandwiches, and grilled favorites with an unforgettable view of Yellow Leaf Bay.</p>
+          </div>
+          <div class="r-location">Taniti City</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="eat-tab-bylocation" class="tab-content">
+    <div class="tabs" style="margin-bottom: 28px; background: rgba(26,107,138,0.08);">
+      <button class="tab-btn active" onclick="switchTab('loc', 'tacity')">🏙️ Taniti City</button>
+      <button class="tab-btn" onclick="switchTab('loc', 'merriton')">⚓ Merriton Landing</button>
+    </div>
+    <div id="loc-tab-tacity" class="tab-content active">
+      <h2 class="sub-heading">Taniti City Restaurants</h2>
+      <p class="sub-desc">The heart of the island, near native architecture and the white-sand beach.</p>
+      <div class="restaurant-list">
+        <div class="restaurant-item"><div class="r-icon" style="background:rgba(76,168,90,0.1);">🐟</div><div><h4>Harbor Fish & Rice</h4><p>Local fish and rice dishes.</p></div><div class="r-location">Local Cuisine</div></div>
+        <div class="restaurant-item"><div class="r-icon" style="background:rgba(76,168,90,0.1);">🍚</div><div><h4>The Fishing Village</h4><p>Beachside casual dining.</p></div><div class="r-location">Local Cuisine</div></div>
+        <div class="restaurant-item"><div class="r-icon" style="background:rgba(26,107,138,0.1);">🥢</div><div><h4>Golden Dragon</h4><p>Pan-Asian fusion.</p></div><div class="r-location">Pan-Asian</div></div>
+        <div class="restaurant-item"><div class="r-icon" style="background:rgba(192,67,43,0.1);">🍕</div><div><h4>Bay View Grill</h4><p>American-style with bay views.</p></div><div class="r-location">American</div></div>
+      </div>
+    </div>
+    <div id="loc-tab-merriton" class="tab-content">
+      <h2 class="sub-heading">Merriton Landing Restaurants</h2>
+      <p class="sub-desc">The rapidly developing north side of Yellow Leaf Bay — Taniti's entertainment hub.</p>
+      <div class="restaurant-list">
+        <div class="restaurant-item"><div class="r-icon" style="background:rgba(76,168,90,0.1);">🌺</div><div><h4>Yellow Leaf Kitchen</h4><p>Traditional family recipes.</p></div><div class="r-location">Local Cuisine</div></div>
+        <div class="restaurant-item"><div class="r-icon" style="background:rgba(26,107,138,0.1);">🍜</div><div><h4>Pacific Rim Bistro</h4><p>Japanese, Thai & Vietnamese.</p></div><div class="r-location">Pan-Asian</div></div>
+        <div class="restaurant-item"><div class="r-icon" style="background:rgba(192,67,43,0.1);">🍔</div><div><h4>Island Burgers & Shakes</h4><p>Classic comfort food with a twist.</p></div><div class="r-location">American</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="eat-tab-grocery" class="tab-content">
+    <h2 class="sub-heading">Grocery & Convenience</h2>
+    <p class="sub-desc">Stock up on local produce or find familiar favorites at Taniti's grocery stores.</p>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-img" style="background: linear-gradient(135deg,#d4f0d4,#b0e8b8);">🛒</div>
+        <div class="card-body"><span class="card-tag tag-local">Supermarket</span><h3>Taniti Fresh Market</h3><p>Large supermarket with local and imported goods. Fresh produce and seafood daily.</p></div>
+      </div>
+      <div class="card">
+        <div class="card-img" style="background: linear-gradient(135deg,#d8e4f8,#b8ccf0);">🏪</div>
+        <div class="card-body"><span class="card-tag tag-local">Supermarket</span><h3>Island Grocery Co.</h3><p>Second large supermarket near Merriton Landing with a wide selection of local and international items.</p></div>
+      </div>
+      <div class="card">
+        <div class="card-img" style="background: linear-gradient(135deg,#fce4c8,#f8d0a0);">🌙</div>
+        <div class="card-body"><span class="card-tag tag-family">24 Hours</span><h3>Bay Convenience Store</h3><p>Open 24 hours a day — perfect for late-night snacks or early morning supplies before your adventure.</p></div>
+      </div>
+    </div>
+    <p style="margin-top:16px; font-size:0.85rem; color: var(--light-text); font-style: italic;">Also: two smaller neighborhood grocery stores located throughout the island.</p>
+  </div>
+
+  <div class="map-container">
+    <div class="map-pin">🍽️</div>
+    <p>Taniti Restaurants & Grocery — Interactive Map</p>
+    <span>Draggable, zoomable map with all dining locations marked</span>
+  </div>
+</div>
+
+<footer>
+  <div class="logo">Taniti<span>✦</span> Island</div>
+  <p>© 2024 Taniti Island Tourism Board</p>
+</footer>
+
+</body>
+</html>
